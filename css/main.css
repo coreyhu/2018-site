@@ -1,0 +1,124 @@
+@media (max-width: 768px) {
+
+    .jumbotron {
+        height: 100vh;
+    }
+    h1,
+    #typed,
+    .typed-cursor {
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+    h3 {
+        font-size: 2rem;
+        line-height: 2.7rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        height: 100vh;
+    }
+
+    h1,
+    #typed,
+    .typed-cursor {
+        font-size: 8rem;
+        line-height:8rem;
+    }
+    h3 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    background: #fd746c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #ff9068, #fd746c);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #ff9068, #fd746c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.jumbotron {
+    position: relative;
+    z-index: 10;
+}
+
+h1,
+h3,
+.typed-cursor {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+h1,
+#typed {
+    font-weight: 800;
+    margin-bottom: 2%;
+    letter-spacing: .3rem;
+}
+
+h3 {
+    margin-bottom: 5%;
+    letter-spacing: .1rem;
+    opacity: 0;
+}
+
+header a {
+    font-weight: 800;
+    color: white;
+    background: black;
+}
+
+header a:hover {
+    color: white;
+    background: none;
+    border-bottom: 5px dashed white;
+    display: inline;
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+    z-index: 100;
+    background: white;
+    height:100vh;
+}
+
+.content-wrapper {
+    height:100vh;
+}
+
+#text {
+    position: relative;
+    overflow-y: scroll;
+    height:100vh;
+}
+
+#navbar {
+    position: sticky;
+}
+
+.typed-cursor {
+    font-weight: 400;
+    padding-bottom: 2rem;
+    animation: blink-animation 1s steps(2, start) infinite;
+    -webkit-animation: blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
