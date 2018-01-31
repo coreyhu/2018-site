@@ -96,7 +96,7 @@ header a:hover {
 
 #text {
     position: relative;
-    overflow-y: scroll;
+    overflow-y: auto;
     height:100vh;
 }
 

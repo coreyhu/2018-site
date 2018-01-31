@@ -18,7 +18,7 @@
 <body>
 
     <div id="fullpage">
-        <div class="jumbotron jumbotron-fluid text-white section" id="jumbo-bg">
+        <div class="section jumbotron jumbotron-fluid text-white " id="jumbo-bg">
             <header class="container-fluid px-5 fixed-bottom">
                 <div class="col-lg-9">
                     <div id="typed-text">
@@ -31,10 +31,8 @@
                 </div>
             </header>
         </div>
-
-        // keep the scroll, but use bootstrap tab ssytem
         <div class="section content-wrapper">
-            <div class="container-fluid content">
+            <div class="container-fluid content" id="content">
                 <div class="row">
                     <div class="col-lg-2">
                         <nav id="navbar" class="nav flex-md-column nav-pills py-5">
@@ -44,8 +42,8 @@
                         </nav>
                     </div>
 
-                    <div id="text" class="col-lg" data-spy="scroll" data-target="#navbar" data-offset="0">
-                        <section class="container py-2">
+                    <div id="text" class="col-lg" data-spy="scroll" data-target="#navbar" data-offset="50">
+                        <section class="container py-5">
                             <h4 id="cs">Computer Science</h4>
                             <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                             <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
@@ -92,18 +90,20 @@
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 
     <script>
-        $(".content").hide();
+        $(".content-wrapper").hide();
 
         function postType() {
             $("h3").delay(1100).fadeTo(750, 1);
-            $(".content").delay(1100).show();
+            $(".content-wrapper").delay(1100).show();
             $(function() {
                 $('#fullpage').fullpage({
-                        scrollOverflow: true
-                    }
-
-                );
-            });
+                    scrollOverflow: true,
+                    anchors: ['headerSection', 'contentSection'],
+                    scrollingSpeed: 1200,
+                    navigation: true,
+                    easingcss3: cubic-bezier(0.550, 0.055, 0.675, 0.190)
+                });
+            })
         }
 
         var typed = new Typed("#typed", {
@@ -117,8 +117,6 @@
             onComplete: (arrayPos, self) => postType()
         })
     </script>
-
-
     <script>
         var offset = 80;
         $('#navbar a').click(function(event) {
@@ -127,20 +125,6 @@
             scrollBy(0, -offset);
         });
     </script>
-    <script>
-        $(document).on('scroll', function(e) {
-            var top = $('.slider .slide:last').offset().top;
-            var screenTop = $(document).scrollTop();
-
-            if (top > screenTop && $.scrollify.isDisabled()) {
-                $.scrollify.enable();
-                $.scrollify.update();
-            } else if (top < screenTop && !$.scrollify.isDisabled()) {
-                $.scrollify.disable();
-            }
-        });
-    </script>
-
 
 </body>
 
