@@ -99,9 +99,9 @@
                 $('#fullpage').fullpage({
                     scrollOverflow: true,
                     anchors: ['headerSection', 'contentSection'],
-                    scrollingSpeed: 1200,
+                    scrollingSpeed: 1000,
                     navigation: true,
-                    easingcss3: cubic-bezier(0.550, 0.055, 0.675, 0.190)
+                    easingcss3: 'cubic-bezier(0.550, 0.055, 0.675, 0.190)'
                 });
             })
         }
@@ -112,6 +112,7 @@
             showCursor: true,
             cursorChar: '|',
             typeSpeed: 80,
+            contentType: 'null',
             startDelay: 1200,
             backSpeed: 40,
             onComplete: (arrayPos, self) => postType()
