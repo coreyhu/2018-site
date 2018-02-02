@@ -6,9 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:800,800i,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800,600,400" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
 
 
     <title>Welcome.</title>
@@ -25,8 +26,8 @@
                         <h1>CALL ME COREY.</h1>
                     </div>
                     <span id="typed"></span>
-                    <h3>Welcome! I’m a uc berkeley student studying <a href="#cs">computer science</a> and <a href="#design">design</a>.</h3>
-                    <h3><a href="#contact">Let's get in touch.</a> </h3>
+                    <h3>Welcome! I’m a uc berkeley student studying <a class='btn-material scroll-to-cs' href="#cs">computer science</a> and <a class='btn-material scroll-to-design' href="#design">design</a>.</h3>
+                    <h3><a class='btn-material scroll-to-contact' href="#contact">Let's get in touch.</a> </h3>
                 </div>
             </header>
         </div>
@@ -34,7 +35,7 @@
             <div class="container-fluid content" id="content">
                 <div class="row">
                     <div class="col-lg-2">
-                        <nav id="navbar" class="nav flex-md-column nav-pills py-5">
+                        <nav id="navbar" class="nav flex-lg-column nav-pills justify-content-center nav-fill py-5">
                             <a class="nav-item nav-link" data-toggle="tab" href="#cs">Computer Science</a>
                             <a class="nav-item nav-link " data-toggle="tab" href="#design">Design</a>
                             <a class="nav-item nav-link" data-toggle="tab" href="#contact">Contact</a>
@@ -43,35 +44,103 @@
 
                     <div id="text" class="col-lg" data-spy="scroll" data-target="#navbar" data-offset="50">
                         <section class="container py-5">
-                            <h4 id="cs">Computer Science</h4>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                            <h3 id="cs" class="mt-4">Computer Science</h3>
+                            <p>Here are some of my projects.</p>
+                            <div class='card-deck'>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">EigenVR</h5>
+                                        <p class="card-text">VR Visualization tool for Math Topics</p>
+                                        <a href="https://github.com/clarencechen/EigenVR" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">MNIST</h5>
+                                        <p class="card-text">CNN trained on the MNIST dataset.</p>
+                                        <a href="https://github.com/coreywho/mnist-CNN" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">scikit-languageID</h5>
+                                        <p class="card-text">SVM trained on Wikipedia dataset to identify patterns in different languages.</p>
+                                        <a href="https://github.com/coreywho/scikit-languageID" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
                         </section>
 
-                        <section class="container py-2">
-                            <h4 id="design">Design</h4>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <section class="container py-5">
+                            <h3 id="design" class="mt-4">Design</h3>
+                            <p>Here are some of my projects.</p>
+                            <div class='card-deck'>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">EigenVR</h5>
+                                        <p class="card-text">VR Visualization tool for Math Topics</p>
+                                        <a href="https://github.com/clarencechen/EigenVR" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">MNIST</h5>
+                                        <p class="card-text">CNN trained on the MNIST dataset.</p>
+                                        <a href="https://github.com/coreywho/mnist-CNN" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">scikit-languageID</h5>
+                                        <p class="card-text">SVM trained on Wikipedia dataset to identify patterns in different languages.</p>
+                                        <a href="https://github.com/coreywho/scikit-languageID" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                            <p>Here are some of my projects.</p>
+                            <div class='card-deck'>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">EigenVR</h5>
+                                        <p class="card-text">VR Visualization tool for Math Topics</p>
+                                        <a href="https://github.com/clarencechen/EigenVR" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">MNIST</h5>
+                                        <p class="card-text">CNN trained on the MNIST dataset.</p>
+                                        <a href="https://github.com/coreywho/mnist-CNN" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">scikit-languageID</h5>
+                                        <p class="card-text">SVM trained on Wikipedia dataset to identify patterns in different languages.</p>
+                                        <a href="https://github.com/coreywho/scikit-languageID" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
                         </section>
-                        <section class="container py-2">
-                            <h4 id="contact">Contact Me</h4>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                            <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        <section class="container py-5">
+                            <h3 id="contact" class="mt-4">Contact Me</h3>
+
                         </section>
                     </div>
                 </div>
@@ -92,6 +161,7 @@
         function postType() {
             $("h3").delay(1100).fadeTo(750, 1);
             $(".content-wrapper").delay(1100).show();
+            getContentScroll();
         }
 
         var typed = new Typed("#typed", {
@@ -105,6 +175,20 @@
             backSpeed: 40,
             onComplete: (arrayPos, self) => postType()
         })
+
+        function getContentScroll() {
+            var distance = $('#text').offset().top,
+                $window = $(window);
+            $window.scroll(function() {
+                if ($window.scrollTop() >= distance) {
+                    console.log('at-top');
+                    $("#text").css("overflow", "scroll");
+                } else {
+                    $("#text").css("overflow", "hidden");
+                }
+
+            })
+        };
     </script>
     <script>
         var offset = 80;
@@ -115,16 +199,30 @@
         });
     </script>
     <script>
-        $(window).on("scroll", function() {
-            var scrollHeight = $(document).height();
-            var scrollPosition = $(window).height() + $(window).scrollTop();
-            if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-                // when scroll to bottom of the page
-                $("#text").css("overflow", "scroll");
-                console.log('here');
-            } else {
-                $("#text").css("overflow", "hidden");
-            }
+    </script>
+
+    <script>
+        document.querySelector('.scroll-to-cs').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#cs').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        document.querySelector('.scroll-to-design').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#design').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+
+
+        document.querySelector('.scroll-to-contact').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#contact').scrollIntoView({
+                behavior: 'smooth'
+            });
         });
     </script>
 
