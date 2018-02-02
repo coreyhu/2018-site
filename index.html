@@ -31,6 +31,7 @@
                 </div>
             </header>
         </div>
+
         <div class="section content-wrapper">
             <div class="container-fluid content" id="content">
                 <div class="row">
@@ -42,7 +43,8 @@
                         </nav>
                     </div>
 
-                    <div id="text" class="col-lg" data-spy="scroll" data-target="#navbar" data-offset="50">
+
+                    <div id="text" class="col-lg" data-spy="scroll" data-target="#navbar" data-offset="0">
                         <section class="container py-5">
                             <h3 id="cs" class="mt-4">Computer Science</h3>
                             <p>Here are some of my projects.</p>
@@ -181,7 +183,6 @@
                 $window = $(window);
             $window.scroll(function() {
                 if ($window.scrollTop() >= distance) {
-                    console.log('at-top');
                     $("#text").css("overflow", "scroll");
                 } else {
                     $("#text").css("overflow", "hidden");

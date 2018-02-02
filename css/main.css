@@ -142,42 +142,22 @@ header a.btn-material:hover {
     color:white;
 }
 
-
-
-/*
-.btn-material{
-  width: 480px;
-  height: 120px;
-  padding: 20px;
-  margin: auto;
-  background: #FFF;
-  margin-top: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); 
-  transition: all 0.3s; 
-  border-radius: 3px;
-}
-
-.btn-material:hover{
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  transition: all 0.3s;
-  transform: translateZ(10px);
-}
-*/
 .content-wrapper {
     position: relative;
     z-index: 100;
     background: white;
-    height: 100vh;
+    height: 120vh;
 }
 
 #text {
     position: relative;
     overflow: hidden;
-    height: 100vh;
+    height: 120vh;
 }
 
 #navbar {
-    position: sticky;
+    position: relative;
+    overflow: auto;
 }
 
 .typed-cursor {
