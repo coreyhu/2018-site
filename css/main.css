@@ -83,20 +83,16 @@ header a:hover {
     text-decoration: none;
 }
 
-.content {
+.content-wrapper {
     position: relative;
     z-index: 100;
     background: white;
     height:100vh;
 }
 
-.content-wrapper {
-    height:100vh;
-}
-
 #text {
     position: relative;
-    overflow-y: auto;
+    overflow-y: scroll;
     height:100vh;
 }
 
