@@ -163,14 +163,12 @@ header a.btn-material:hover {
   transform: translateZ(10px);
 }
 */
-
 .content-wrapper {
     position: relative;
     z-index: 100;
     background: white;
     height: 100vh;
 }
-
 
 #text {
     position: relative;
