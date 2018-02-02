@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:800,800i,600" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 
 
     <title>Welcome.</title>
@@ -86,8 +85,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/typed.js"></script>
-    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 
     <script>
         $(".content-wrapper").hide();
@@ -95,15 +92,6 @@
         function postType() {
             $("h3").delay(1100).fadeTo(750, 1);
             $(".content-wrapper").delay(1100).show();
-            $(function() {
-                $('#fullpage').fullpage({
-                    scrollOverflow: true,
-                    anchors: ['headerSection', 'contentSection'],
-                    scrollingSpeed: 1000,
-                    navigation: true,
-                    easingcss3: 'cubic-bezier(0.550, 0.055, 0.675, 0.190)'
-                });
-            })
         }
 
         var typed = new Typed("#typed", {
@@ -124,6 +112,19 @@
             event.preventDefault();
             $($(this).attr('href'))[0].scrollIntoView();
             scrollBy(0, -offset);
+        });
+    </script>
+    <script>
+        $(window).on("scroll", function() {
+            var scrollHeight = $(document).height();
+            var scrollPosition = $(window).height() + $(window).scrollTop();
+            if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+                // when scroll to bottom of the page
+                $("#text").css("overflow", "scroll");
+                console.log('here');
+            } else {
+                $("#text").css("overflow", "hidden");
+            }
         });
     </script>
 
