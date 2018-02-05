@@ -166,12 +166,11 @@ header a.btn-material:hover {
     position: relative;
     z-index: 100;
     background: white;
-    height: 100vh;
+    height: auto;
 }
 
 #text {
     position: relative;
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
-    height: 100vh;
 }
