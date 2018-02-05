@@ -158,10 +158,8 @@
             $window.scroll(function() {
                 if ($window.scrollTop() >= distance) {
                     $("#text").css("overflow", "scroll");
-                    $("#text").css("-webkit-overflow-scrolling", "touch");
                 } else {
                     $("#text").css("overflow", "hidden");
-                    $("#text").css("-webkit-overflow-scrolling", "auto");
                 }
 
             })

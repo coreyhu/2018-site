@@ -172,6 +172,6 @@ header a.btn-material:hover {
 #text {
     position: relative;
     overflow: hidden;
-    -webkit-overflow-scrolling: auto;
+    -webkit-overflow-scrolling: touch;
     height: 100vh;
 }
