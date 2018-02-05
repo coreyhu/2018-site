@@ -49,9 +49,21 @@
                             <h3 id="cs" class="mt-4">Computer Science</h3>
                             <p>Here are some of my projects.</p>
                             <div class='card-deck'>
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Kickeroo</h5>
+                                        <p class ="card-subtitle">Hack for Humanity 2018 Popularity Award Winner</p>
+                                        <p class="card-text">Fetal kick detector for pregnant mothers using Arduino and Python.</p>
+                                        <a href="https://github.com/coreywho/HackforHumanity2018" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
+                                    </div>
+                                </div>
+
+
                                 <div class="card">
                                     <div class="card-body">
                                         <h5 class="card-title">EigenVR</h5>
+                                        <p class ="card-subtitle">2017 Cal VRathon Entry</p>
                                         <p class="card-text">VR Visualization tool for Math Topics</p>
                                         <a href="https://github.com/clarencechen/EigenVR" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
                                     </div>
@@ -59,9 +71,9 @@
 
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="card-title">MNIST</h5>
-                                        <p class="card-text">CNN trained on the MNIST dataset.</p>
-                                        <a href="https://github.com/coreywho/mnist-CNN" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
+                                        <h5 class="card-title">RapNN</h5>
+                                        <p class="card-text">LSTM neural network that trains from and generates song lyrics.</p>
+                                        <a href="https://github.com/coreywho/RapNN" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
                                     </div>
                                 </div>
                                 <div class="card">
@@ -69,6 +81,13 @@
                                         <h5 class="card-title">scikit-languageID</h5>
                                         <p class="card-text">SVM trained on Wikipedia dataset to identify patterns in different languages.</p>
                                         <a href="https://github.com/coreywho/scikit-languageID" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">gitlet</h5>
+                                        <p class="card-text">A git-inspired version control system built in Java.</p>
+                                        <a href="https://github.com/coreywho/gitlet" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
                                     </div>
                                 </div>
 
@@ -184,8 +203,10 @@
             $window.scroll(function() {
                 if ($window.scrollTop() >= distance) {
                     $("#text").css("overflow", "scroll");
+                    $("#text").css("-webkit-overflow-scrolling", "touch");
                 } else {
                     $("#text").css("overflow", "hidden");
+                    $("#text").css("-webkit-overflow-scrolling", "auto");
                 }
 
             })
