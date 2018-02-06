@@ -132,8 +132,13 @@ header a.btn-material:hover {
 }
 
 #navbar {
-    position: relative;
-    overflow: auto;
+    position: fixed;
+    z-index: 200;
+    top: 100px;
+    right: 1px;
+    width: 100px;
+    height: 100px;
+
 }
 
 
@@ -162,7 +167,8 @@ header a.btn-material:hover {
     color: white;
 }
 
-.content-wrapper {
+
+.content {
     position: relative;
     z-index: 100;
     background: white;

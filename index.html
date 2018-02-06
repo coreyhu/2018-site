@@ -17,6 +17,12 @@
 
 <body>
 
+    <nav id="navbar" class="nav nav-pills">
+        <a class="nav-link" href="">Link1</a>
+        <a class="nav-link" href="">Link2</a>
+        <a class="nav-link" href="">Link3</a>
+    </nav>
+
     <div id="fullpage">
         <div class="section jumbotron jumbotron-fluid text-white " id="jumbo-bg">
             <header class="container-fluid fixed-bottom">
@@ -32,125 +38,115 @@
             </header>
         </div>
 
-        <div class="section content-wrapper">
-            <div class="container-fluid content" id="content">
-                <div class="row">
-                    <div class="col-lg-2">
-                        <nav id="navbar" class="nav flex-lg-column nav-pills justify-content-center nav-fill py-5">
-                            <a class="nav-item nav-link" data-toggle="tab" href="#cs">Computer Science</a>
-                            <a class="nav-item nav-link " data-toggle="tab" href="#design">Design</a>
-                            <a class="nav-item nav-link" data-toggle="tab" href="#contact">Contact</a>
-                        </nav>
-                    </div>
 
+        <div class="container-fluid content" id="content">
+            <div class="row">
+                <div id="text" class="col-lg" data-spy="scroll" data-target="#navbar" data-offset="0">
+                    <section class="container py-5">
+                        <h3 id="cs" class="mt-4">Computer Science</h3>
+                        <p>Here are some of my Computer Science projects.</p>
+                        <div class='card-deck'>
 
-                    <div id="text" class="col-lg" data-spy="scroll" data-target="#navbar" data-offset="0">
-                        <section class="container py-5">
-                            <h3 id="cs" class="mt-4">Computer Science</h3>
-                            <p>Here are some of my Computer Science projects.</p>
-                            <div class='card-deck'>
-
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Kickeroo</h5>
-                                        <p class="card-subtitle">Hack for Humanity 2018 Popularity Award Winner</p>
-                                        <p class="card-text">Fetal kick detector for pregnant mothers using Arduino and Python.</p>
-                                        <a href="https://github.com/coreywho/HackforHumanity2018" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
-                                    </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kickeroo</h5>
+                                    <p class="card-subtitle">Hack for Humanity 2018 Popularity Award Winner</p>
+                                    <p class="card-text">Fetal kick detector for pregnant mothers using Arduino and Python.</p>
+                                    <a href="https://github.com/coreywho/HackforHumanity2018" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
                                 </div>
-
-
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">EigenVR</h5>
-                                        <p class="card-subtitle">2017 Cal VRathon Entry</p>
-                                        <p class="card-text">VR Visualization tool for Math Topics</p>
-                                        <a href="https://github.com/clarencechen/EigenVR" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">RapNN</h5>
-                                        <p class="card-text">LSTM neural network that trains from and generates song lyrics.</p>
-                                        <a href="https://github.com/coreywho/RapNN" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">scikit-languageID</h5>
-                                        <p class="card-text">SVM trained on Wikipedia dataset to identify patterns in different languages.</p>
-                                        <a href="https://github.com/coreywho/scikit-languageID" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">gitlet</h5>
-                                        <p class="card-text">A git-inspired version control system built in Java.</p>
-                                        <a href="https://github.com/coreywho/gitlet" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
-                                    </div>
-                                </div>
-
-
-
-
-                            </div>
-                        </section>
-
-                        <section class="container py-5">
-                            <h3 id="design" class="mt-4">Design</h3>
-                            <p>Check out a few of my Design projects.</p>
-                            <div class='card-deck'>
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="assets/cs.jpg" alt="Low Poly Design">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Low Poly Design</h5>
-                                        <a href="https://www.behance.net/gallery/60295251/Low-Poly-Design" class="btn btn-outline-dark"><i class="fab fa-behance"></i> Behance</a>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="assets/cs.jpg" alt="Low Poly Design">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Daily Cal Design</h5>
-                                        <a href="https://www.behance.net/gallery/60295251/Low-Poly-Design" class="btn btn-outline-dark"><i class="fab fa-behance"></i> Behance</a>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="assets/cs.jpg" alt="Low Poly Design">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Cafe Colucci</h5>
-                                        <a href="https://www.behance.net/gallery/60295251/Low-Poly-Design" class="btn btn-outline-dark"><i class="fab fa-behance"></i> Behance</a>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="assets/cs.jpg" alt="Low Poly Design">
-                                    <div class="card-body">
-                                        <h5 class="card-title">EigenVR UI</h5>
-                                        <a href="https://www.behance.net/gallery/60295251/Low-Poly-Design" class="btn btn-outline-dark"><i class="fab fa-behance"></i> Behance</a>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="assets/cs.jpg" alt="Low Poly Design">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Smartbook</h5>
-                                        <a href="https://www.behance.net/gallery/60295251/Low-Poly-Design" class="btn btn-outline-dark"><i class="fab fa-behance"></i> Behance</a>
-                                    </div>
-                                </div>
-
-
-
                             </div>
 
-                        </section>
-                        <section class="container py-5">
-                            <h3 id="contact" class="mt-4">Contact Me</h3>
 
-                        </section>
-                    </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">EigenVR</h5>
+                                    <p class="card-subtitle">2017 Cal VRathon Entry</p>
+                                    <p class="card-text">VR Visualization tool for Math Topics</p>
+                                    <a href="https://github.com/clarencechen/EigenVR" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">RapNN</h5>
+                                    <p class="card-text">LSTM neural network that trains from and generates song lyrics.</p>
+                                    <a href="https://github.com/coreywho/RapNN" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">scikit-languageID</h5>
+                                    <p class="card-text">SVM trained on Wikipedia dataset to identify patterns in different languages.</p>
+                                    <a href="https://github.com/coreywho/scikit-languageID" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">gitlet</h5>
+                                    <p class="card-text">A git-inspired version control system built in Java.</p>
+                                    <a href="https://github.com/coreywho/gitlet" class="btn btn-outline-dark"><i class="fab fa-github"></i> Github</a>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </section>
+
+                    <section class="container py-5">
+                        <h3 id="design" class="mt-4">Design</h3>
+                        <p>Check out a few of my Design projects.</p>
+                        <div class='card-deck'>
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="assets/cs.jpg" alt="Low Poly Design">
+                                <div class="card-body">
+                                    <h5 class="card-title">Low Poly Design</h5>
+                                    <a href="https://www.behance.net/gallery/60295251/Low-Poly-Design" class="btn btn-outline-dark"><i class="fab fa-behance"></i> Behance</a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="assets/cs.jpg" alt="Low Poly Design">
+                                <div class="card-body">
+                                    <h5 class="card-title">Daily Cal Design</h5>
+                                    <a href="https://www.behance.net/gallery/60295251/Low-Poly-Design" class="btn btn-outline-dark"><i class="fab fa-behance"></i> Behance</a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="assets/cs.jpg" alt="Low Poly Design">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cafe Colucci</h5>
+                                    <a href="https://www.behance.net/gallery/60295251/Low-Poly-Design" class="btn btn-outline-dark"><i class="fab fa-behance"></i> Behance</a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="assets/cs.jpg" alt="Low Poly Design">
+                                <div class="card-body">
+                                    <h5 class="card-title">EigenVR UI</h5>
+                                    <a href="https://www.behance.net/gallery/60295251/Low-Poly-Design" class="btn btn-outline-dark"><i class="fab fa-behance"></i> Behance</a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="assets/cs.jpg" alt="Low Poly Design">
+                                <div class="card-body">
+                                    <h5 class="card-title">Smartbook</h5>
+                                    <a href="https://www.behance.net/gallery/60295251/Low-Poly-Design" class="btn btn-outline-dark"><i class="fab fa-behance"></i> Behance</a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </section>
+                    <section class="container py-5">
+                        <h3 id="contact" class="mt-4">Contact Me</h3>
+
+                    </section>
                 </div>
             </div>
         </div>
@@ -196,16 +192,6 @@
 
             })
         };
-    </script>
-    <script>
-        var offset = 80;
-        $('#navbar a').click(function(event) {
-            event.preventDefault();
-            $($(this).attr('href'))[0].scrollIntoView();
-            scrollBy(0, -offset);
-        });
-    </script>
-    <script>
     </script>
 
     <script>
